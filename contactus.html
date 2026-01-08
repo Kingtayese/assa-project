@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="./images/ASSA Company Logo.jpeg">
+  <title>Contact Us | ASSA</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- jQuery -->
+  <script src="cdn/jquery-3.1.1.min.js"></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="cdn/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="aos/aos.css">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="index.css">
+</head>
+<style>
+  /* CONTACT PAGE */
+  h1 {
+    color: #003366;
+    font-size: 36px;
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contact-section {
+    padding: 60px 7%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-container {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .contact-info h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #012970;
+  }
+
+  .contact-info ul {
+    list-style: none;
+    margin-top: 20px;
+  }
+
+  .contact-info ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .contact-map {
+    flex: 1;
+    min-width: 350px;
+  }
+
+  .contact-map h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #012970;
+  }
+
+  iframe {
+    border-radius: 10px;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease-out;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 767px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg  bg-light fixed-top">
+    <!-- Logo + Brand -->
+    <a class="navbar-brand big" href="index.html">
+      <img src="images/ASSA Company Logo.jpeg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      AUGUST SIXTH SYSTEMS ASSOCIATES LIMITED
+    </a>
+    <a class="navbar-brand mini d-none" href="index.html">
+      <img src="images/ASSA Company Logo.jpeg" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+      A. S. S. A LIMITED
+    </a>
+
+    <!-- Hamburger / Toggler -->
+    <button class="navbar-toggler navbar-light" type="button" id="menuToggle" aria-controls="navbarContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <!-- Sidebar menu -->
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse navbar-light navbarContent" id="navbarContent">
+      <button class="btn-close-menu" id="menuClose">&times;</button>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./ourmethodology.html">Our Methodology</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="./contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+    <div id="menuOverlay"></div>
+  </nav>
+  <!-- HEADER SECTION -->
+  <div class="header">
+    <img src="./images/contact-banner.jpg" alt="Contact ASSA">
+    <h1 class="header-text">Contact Us</h1>
+  </div>
+
+  <!-- CONTACT INFO SECTION -->
+  <section class="contact-section fade-in">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Get in Touch</h2>
+        <p>If you have questions or would like to speak with our experts, we are here to help.</p>
+
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> No 1 Aromire Street, By Allen Roundabout,<br> Ikeja, Lagos State.
+            Nigeria.</li>
+          <li><i class="fas fa-envelope"></i> <a
+              href="mailto:augustsixsystemsassociate@gmail.com">augustsixsystemsassociate@gmail.com</a></li>
+          <li><i class="fas fa-phone-alt"></i> +234 (802) 426-4024</li>
+        </ul>
+      </div>
+
+      <div class="contact-map fade-in">
+        <h3>Find Us Here</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.56247328971!2d3.3452515748524933!3d6.606595322401962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b93cbfaa2f8ad%3A0xdaca8e02132f3b8d!2sAllen%20Ave%2C%20Allen%20101233%2C%20Ikeja!5e0!3m2!1sen!2sng!4v1730834100000!5m2!1sen!2sng"
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer" style="margin-top: 40px;">
+    <div class="footer-content">
+
+      <!-- LOGO + ABOUT -->
+      <div class="footer-section about">
+        <a class="navbar-brand" href="./index.html">
+          <img src="images/ASSA Company Logo.jpeg" alt="Logo" width="50" height="100" class="footer-logo">
+        </a>
+        <h3>AUGUST SIXTH SYSTEMS ASSOCIATES LIMITED</h3>
+        <p>Powerful Insights, Proven Delivery.</p>
+      </div>
+
+      <!-- CONTACT INFO -->
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+
+        <p>
+          <i class="fas fa-map-marker-alt"></i>
+          No 1, Aromire Street, By Allen Roundabout, Ikeja, Lagos State, Nigeria.
+        </p>
+
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:augustsixsystemsassociate@gmail.com">
+            augustsixsystemsassociate@gmail.com
+          </a>
+        </p>
+
+        <p>
+          <i class="fas fa-phone-alt"></i>
+          +234 (802) 426-4024
+        </p>
+
+
+        <!-- <div class="socials">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div> -->
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./ourmethodology.html">Our Methodology</a></li>
+          <li><a href="./contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="bottom-bar">
+      <p style="font-size: 13px;">© 2025 ASSA. All Rights Reserved.</p>
+      <p class="legal-links">
+        <a href="./privacypolicy.html">Privacy Policy</a> |
+        <a href="./termsandconditions.html">Terms & Conditions</a>
+      </p>
+    </div>
+  </footer>
+  <!-- Popper + Bootstrap JS -->
+  <script src="cdn/popper.min.js"></script>
+  <script src="cdn/bootstrap.min.js"></script>
+
+  <!-- Optional jQuery UI if needed -->
+  <script src="cdn/jquery-ui.min.js"></script>
+
+  <!-- Your scroll animation script -->
+  <script>
+    const elements = document.querySelectorAll('.fade-in');
+    function fadeInScroll() {
+      elements.forEach(el => {
+        const pos = el.getBoundingClientRect().top;
+        if (pos < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', fadeInScroll);
+    fadeInScroll();
+  </script>
+
+
+  <!-- Menu Toggle Script -->
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const menuClose = document.getElementById('menuClose');
+    const navbarContent = document.getElementById('navbarContent');
+    const overlay = document.getElementById('menuOverlay');
+
+    // Open menu
+    menuToggle.addEventListener('click', () => {
+      navbarContent.classList.add('show');
+      overlay.classList.add('show');
+      document.body.classList.add('lock-scroll'); // disables scrolling
+    });
+
+    // Close menu (only X button)
+    menuClose.addEventListener('click', () => {
+      navbarContent.classList.remove('show');
+      overlay.classList.remove('show');
+      document.body.classList.remove('lock-scroll'); // restores scrolling
+    });
+  </script>
+
+</body>
+
+</html>
